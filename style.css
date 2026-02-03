@@ -142,7 +142,6 @@ h3 {
   background: var(--card);
   border-radius: 12px;
   box-shadow: 0 8px 20px var(--box-shadow);
-
   display: none;
   flex-direction: column;
   gap: 8px;
@@ -292,15 +291,18 @@ footer {
 
 /* ==Adding Pages== */
 .adding-pages {
-    margin-top: auto;
-    width: 30%;
-    padding: 20px;
-    text-align: left;
-    color: var(--button-text);
-    border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.2s
+    text-align: center;
 }
 
+.adding-pages button {
+  margin-top: auto;
+  width: 30%;
+  background: var(--button);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s;
+}

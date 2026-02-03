@@ -30,18 +30,23 @@ const addOneBtn = document.getElementById("add-one-page");
 const addFiveBtn = document.getElementById("add-five-pages");
 const addTenBtn = document.getElementById("add-ten-pages");
 
-let currentPage = 0;
 const totalPages = parseInt(totalPagesEl.textContent, 10);
 
-// update UI
+// load saved progress or start at 0
+let currentPage = parseInt(localStorage.getItem("currentPage")) || 0;
+
+// update UI + save
 function updateProgress() {
   currentPageEl.textContent = currentPage;
 
   const percentage = (currentPage / totalPages) * 100;
   progressFill.style.width = `${percentage}%`;
+
+  // save progress
+  localStorage.setItem("currentPage", currentPage);
 }
 
-// button handlers
+// buttons
 addOneBtn.addEventListener("click", () => {
   if (currentPage < totalPages) {
     currentPage += 1;
