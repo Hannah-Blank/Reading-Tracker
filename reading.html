@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <title>Reading Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-header">
+                <a href="#img-modal">
+                    <img src="Ironflame.jpg" alt="Ironflame Cover" class="cover-img">
+                </a>
+                <div id="img-modal" class="modal">
+                    <a href="#" class="close">&times;</a>
+                    <img src="Ironflame.jpg" alt="Ironflame big">
+                </div> 
+                <nav class="navbar">
+                    <!-- Hamburger Button -->
+                     <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+                     <!-- Hidden Menu -->
+                      <ul class="menu">
+                        <li><button data-theme="white">White</button></li>
+                        <li><button data-theme="dark">Dark</button></li>
+                        <li><button data-theme="darkblue">Dark Blue</button></li>
+                        <li><button data-theme="bordeaux">Bordeaux</button></li>
+                        <li><button data-theme="lilac">Lilac</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <h3>"Iron Flame" by Rebecca Yarros</h3>
+            <div class="progress-wrapper">
+                <span class="current-page">0</span>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="total-pages">1981</span>
+            </div>
+            <div class="adding-pages">
+                <button id="add-one-page">+1</button>
+                <button id="add-five-pages">+5</button>
+                <button id="add-ten-pages">+10</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    <footer>
+        <div class="socials">
+            <a href="https://www.instagram.com/hanna.h122010/" class="social-link"><i class="fa-brands fa-instagram"></i></a> 
+            <a href="https://github.com/Hannah-Blank" class="social-link"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+</html>
